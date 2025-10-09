@@ -24,7 +24,7 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://envs.sh/4kh.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1454524346').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "XP_file_store_bot") # without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "XP_FileStoreBoT") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
@@ -36,17 +36,17 @@ CDB_NAME = environ.get("CDB_NAME", "clonetechvj")
 
 # Database Information
 DB_URI = environ.get("DB_URI", "")
-DB_NAME = environ.get("DB_NAME", "")
+DB_NAME = environ.get("DB_NAME", "Cluster0")
 
 # Auto Delete Information
 AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False
 
 # If Auto Delete Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-AUTO_DELETE = int(environ.get("AUTO_DELETE", "5")) # Time in Minutes
-AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "300")) # Time in Seconds
+AUTO_DELETE = int(environ.get("AUTO_DELETE", "2")) # Time in Minutes
+AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "120")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002480514355"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1003114781601"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
@@ -60,8 +60,8 @@ VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 SHORTLINK_URL = environ.get("SHORTLINK_URL", "onylinks.com") # shortlink domain without https://
-SHORTLINK_API = environ.get("SHORTLINK_API", "f8f0b43497353ed4cbec335bfb944fad4dd2953d") # shortlink api
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/XP_How_To_Download_Links") # how to open link 
+SHORTLINK_API = environ.get("SHORTLINK_API", "c0147ee28aa5da255986ba44df2e2db405b6ae40") # shortlink api
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/XP_HowToDownload") # how to open link 
 
 # Website Info:
 WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', False)) # Set True or False
